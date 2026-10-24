@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Experience Memory (exp-memory)",
+    "description": "Long-term cross-session memory: only an index enters the prompt, details are read on demand; turn-end reminder to sediment experience; write-guard enforces format, secret red lines and overwrite protection. Zero extra LLM cost — memory is plain markdown."
+  }
+}

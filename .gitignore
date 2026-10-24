@@ -1,0 +1,7 @@
+# 本机临时/敏感产物，不入库
+_sensitive-scan.mjs
+*.zip
+*.bak
+*.log
+node_modules/
+.DS_Store

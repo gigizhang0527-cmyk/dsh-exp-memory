@@ -1,0 +1,45 @@
+{
+  "name": "dsh-exp-memory",
+  "version": "0.1.0",
+  "description": "经验沉淀：跨会话长期记忆 —— 索引注入召回、回合末自动提醒沉淀、写入守卫与审计。零 LLM 成本，记忆即纯 markdown。Long-term experience memory for DeepSeek Harness: index-only prompt injection, turn-end sedimentation reminder, write-guard and audit.",
+  "type": "module",
+  "license": "MIT",
+  "author": "",
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "memory",
+    "long-term-memory",
+    "experience",
+    "agent-memory"
+  ],
+  "engines": {
+    "dsh": ">=0.1.7-rc.1"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./lib/store.js": "./lib/store.js",
+    "./lib/guard.js": "./lib/guard.js",
+    "./lib/reminder.js": "./lib/reminder.js",
+    "./lib/routes.js": "./lib/routes.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib/",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
